@@ -7,15 +7,27 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E30252022B269EEF00795C99 /* audio in Resources */ = {isa = PBXBuildFile; fileRef = E30252012B269EEF00795C99 /* audio */; };
+		E30252042B26A00100795C99 /* LightNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = E30252032B26A00100795C99 /* LightNode.swift */; };
 		E3E6553C2B268811001A55C1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3E6553B2B268811001A55C1 /* AppDelegate.swift */; };
 		E3E6553E2B268811001A55C1 /* art.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = E3E6553D2B268811001A55C1 /* art.scnassets */; };
 		E3E655402B268811001A55C1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3E6553F2B268811001A55C1 /* ViewController.swift */; };
 		E3E655432B268811001A55C1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E3E655412B268811001A55C1 /* Main.storyboard */; };
 		E3E655452B268813001A55C1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E3E655442B268813001A55C1 /* Assets.xcassets */; };
 		E3E655482B268813001A55C1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E3E655462B268813001A55C1 /* LaunchScreen.storyboard */; };
+		E3E6554F2B2688D3001A55C1 /* Overlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3E6554E2B2688D3001A55C1 /* Overlay.swift */; };
+		E3E655512B2688FA001A55C1 /* ControlOverlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3E655502B2688FA001A55C1 /* ControlOverlay.swift */; };
+		E3E655532B26891D001A55C1 /* PadOverlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3E655522B26891D001A55C1 /* PadOverlay.swift */; };
+		E3E655552B26894A001A55C1 /* ButtonOverlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3E655542B26894A001A55C1 /* ButtonOverlay.swift */; };
+		E3E655582B2689AA001A55C1 /* Character.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3E655572B2689AA001A55C1 /* Character.swift */; };
+		E3E6555A2B268A0D001A55C1 /* ConvinientExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3E655592B268A0D001A55C1 /* ConvinientExtensions.swift */; };
+		E3E6555E2B268E0D001A55C1 /* VCExtensionForOverlays.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3E6555D2B268E0D001A55C1 /* VCExtensionForOverlays.swift */; };
+		E3E655602B2693CA001A55C1 /* ARSCNViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3E6555F2B2693CA001A55C1 /* ARSCNViewDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E30252012B269EEF00795C99 /* audio */ = {isa = PBXFileReference; lastKnownFileType = folder; path = audio; sourceTree = "<group>"; };
+		E30252032B26A00100795C99 /* LightNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LightNode.swift; sourceTree = "<group>"; };
 		E3E655382B268811001A55C1 /* ShadowsInAR.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ShadowsInAR.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E3E6553B2B268811001A55C1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E3E6553D2B268811001A55C1 /* art.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = art.scnassets; sourceTree = "<group>"; };
@@ -23,6 +35,14 @@
 		E3E655422B268811001A55C1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E3E655442B268813001A55C1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E3E655472B268813001A55C1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		E3E6554E2B2688D3001A55C1 /* Overlay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Overlay.swift; sourceTree = "<group>"; };
+		E3E655502B2688FA001A55C1 /* ControlOverlay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControlOverlay.swift; sourceTree = "<group>"; };
+		E3E655522B26891D001A55C1 /* PadOverlay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PadOverlay.swift; sourceTree = "<group>"; };
+		E3E655542B26894A001A55C1 /* ButtonOverlay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonOverlay.swift; sourceTree = "<group>"; };
+		E3E655572B2689AA001A55C1 /* Character.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Character.swift; sourceTree = "<group>"; };
+		E3E655592B268A0D001A55C1 /* ConvinientExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConvinientExtensions.swift; sourceTree = "<group>"; };
+		E3E6555D2B268E0D001A55C1 /* VCExtensionForOverlays.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VCExtensionForOverlays.swift; sourceTree = "<group>"; };
+		E3E6555F2B2693CA001A55C1 /* ARSCNViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARSCNViewDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,13 +76,31 @@
 			isa = PBXGroup;
 			children = (
 				E3E6553B2B268811001A55C1 /* AppDelegate.swift */,
-				E3E6553D2B268811001A55C1 /* art.scnassets */,
 				E3E6553F2B268811001A55C1 /* ViewController.swift */,
+				E30252032B26A00100795C99 /* LightNode.swift */,
+				E3E655572B2689AA001A55C1 /* Character.swift */,
+				E3E6555F2B2693CA001A55C1 /* ARSCNViewDelegate.swift */,
+				E3E655562B268966001A55C1 /* Overlays */,
+				E3E6553D2B268811001A55C1 /* art.scnassets */,
 				E3E655412B268811001A55C1 /* Main.storyboard */,
+				E30252012B269EEF00795C99 /* audio */,
 				E3E655442B268813001A55C1 /* Assets.xcassets */,
 				E3E655462B268813001A55C1 /* LaunchScreen.storyboard */,
+				E3E655592B268A0D001A55C1 /* ConvinientExtensions.swift */,
 			);
 			path = ShadowsInAR;
+			sourceTree = "<group>";
+		};
+		E3E655562B268966001A55C1 /* Overlays */ = {
+			isa = PBXGroup;
+			children = (
+				E3E6554E2B2688D3001A55C1 /* Overlay.swift */,
+				E3E655502B2688FA001A55C1 /* ControlOverlay.swift */,
+				E3E655522B26891D001A55C1 /* PadOverlay.swift */,
+				E3E655542B26894A001A55C1 /* ButtonOverlay.swift */,
+				E3E6555D2B268E0D001A55C1 /* VCExtensionForOverlays.swift */,
+			);
+			path = Overlays;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,6 +163,7 @@
 			files = (
 				E3E6553E2B268811001A55C1 /* art.scnassets in Resources */,
 				E3E655482B268813001A55C1 /* LaunchScreen.storyboard in Resources */,
+				E30252022B269EEF00795C99 /* audio in Resources */,
 				E3E655452B268813001A55C1 /* Assets.xcassets in Resources */,
 				E3E655432B268811001A55C1 /* Main.storyboard in Resources */,
 			);
@@ -137,8 +176,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E3E655552B26894A001A55C1 /* ButtonOverlay.swift in Sources */,
+				E3E655532B26891D001A55C1 /* PadOverlay.swift in Sources */,
+				E3E6555A2B268A0D001A55C1 /* ConvinientExtensions.swift in Sources */,
+				E3E655582B2689AA001A55C1 /* Character.swift in Sources */,
 				E3E655402B268811001A55C1 /* ViewController.swift in Sources */,
+				E3E6554F2B2688D3001A55C1 /* Overlay.swift in Sources */,
+				E3E655512B2688FA001A55C1 /* ControlOverlay.swift in Sources */,
+				E3E6555E2B268E0D001A55C1 /* VCExtensionForOverlays.swift in Sources */,
 				E3E6553C2B268811001A55C1 /* AppDelegate.swift in Sources */,
+				E3E655602B2693CA001A55C1 /* ARSCNViewDelegate.swift in Sources */,
+				E30252042B26A00100795C99 /* LightNode.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

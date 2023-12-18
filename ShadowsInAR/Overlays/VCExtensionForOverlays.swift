@@ -7,7 +7,9 @@
 
 
 import ARKit
+import SceneKit
 import UIKit
+
 
 extension ViewController: PadOverlayDelegate & ButtonOverlayDelegate {
     // MARK: - PadOverlayDelegate
@@ -72,7 +74,7 @@ extension ViewController: PadOverlayDelegate & ButtonOverlayDelegate {
     
     
     func controllerReset() {
-        character?.resetCharacterPosition()
+        character!.resetCharacterPosition()
     }
     
     

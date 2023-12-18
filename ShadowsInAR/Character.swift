@@ -130,6 +130,7 @@ class Character: NSObject {
         characterNode.simdPosition = initialPosition
         characterNode.castsShadow = false
         
+        
         characterOrientation = SCNNode()
         characterNode.addChildNode(characterOrientation)
         characterOrientation.addChildNode(model)
@@ -138,8 +139,8 @@ class Character: NSObject {
         collider.physicsBody = SCNPhysicsBody(type: .kinematic, shape: characterCollisionShape)
         collider.castsShadow = false
         collider.physicsBody?.categoryBitMask = BitmaskPlayer
-        collider.physicsBody?.contactTestBitMask = BitmaskWall | BitmaskBall
-      
+        collider.physicsBody?.contactTestBitMask = BitmaskWall
+        
         // Setup collision shape
         let (min, max) = model.boundingBox
         let collisionCapsuleRadius = CGFloat(max.x - min.x) * CGFloat(0.4)
@@ -178,15 +179,6 @@ class Character: NSObject {
         hitSound.isPositional = false
         hitSound.load()
         
-        hitEnemySound = SCNAudioSource(named: "audio/Explosion1.m4a")!
-        hitEnemySound.volume = 2.0
-        hitEnemySound.isPositional = false
-        hitEnemySound.load()
-        
-        explodeEnemySound = SCNAudioSource(named: "audio/Explosion2.m4a")!
-        explodeEnemySound.volume = 2.0
-        explodeEnemySound.isPositional = false
-        explodeEnemySound.load()
         
         jumpSound = SCNAudioSource(named: "audio/jump.m4a")!
         jumpSound.volume = 0.2
@@ -204,6 +196,7 @@ class Character: NSObject {
             steps[i].isPositional = false
             steps[i].load()
         }
+
     }
     
     private func loadAnimations() {
@@ -249,21 +242,7 @@ class Character: NSObject {
     }
     
     
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
+  
     
     // MARK: - Audio
     

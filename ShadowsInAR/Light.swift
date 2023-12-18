@@ -6,16 +6,13 @@
 //
 
 import SceneKit
-import ARKit
 
 
-
-class LightNode: SCNNode {
+class Light: SCNNode {
     
     
     override init() {
         super.init()
-        
     }
     
     required init?(coder: NSCoder) {
@@ -32,9 +29,8 @@ class LightNode: SCNNode {
         light.color                         = UIColor.white
         light.shadowColor                   = UIColor.black
         
-        
         light.shadowMode                    = .forward
-        light.shadowRadius                  = 10
+        light.shadowRadius                  = 20
         //        light.shadowCascadeCount            = 3
         //        light.shadowCascadeSplittingFactor  = 0.09
         //        light.shadowBias                    = 0.1
@@ -44,7 +40,7 @@ class LightNode: SCNNode {
         light.shadowMapSize = CGSize(width: 2048, height: 2048)
         
         light.spotInnerAngle = 10
-        light.spotOuterAngle = 90
+        light.spotOuterAngle = 30
         light.intensity = 30
         light.zNear = 0.01
         light.zFar = 2
@@ -73,6 +69,4 @@ class LightNode: SCNNode {
         return light
         
     }
-    
-    
 }
