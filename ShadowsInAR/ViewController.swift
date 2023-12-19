@@ -26,7 +26,7 @@ class ViewController: UIViewController, SCNSceneRendererDelegate & SCNPhysicsCon
     var character: Character?
     
     //  Lights (spot or directional)
-    var lightNode: LightNode?
+    var lightNode: Light?
     
     // Focus point
     private var focusPoint: CGPoint!
@@ -234,9 +234,7 @@ class ViewController: UIViewController, SCNSceneRendererDelegate & SCNPhysicsCon
     
     
     func setupLights() {
-        lightNode = LightNode()
-//        lightNode?.light = lightNode?.spotLight()
-//        lightNode?.light = lightNode?.directionalLight()
+        lightNode = Light()
         lightNode?.position = SCNVector3Make(-0.005, 0.01, -0.022)
         arscnView.pointOfView?.addChildNode(lightNode!)  
     }

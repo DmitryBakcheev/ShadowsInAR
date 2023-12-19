@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		E30252022B269EEF00795C99 /* audio in Resources */ = {isa = PBXBuildFile; fileRef = E30252012B269EEF00795C99 /* audio */; };
-		E30252042B26A00100795C99 /* LightNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = E30252032B26A00100795C99 /* LightNode.swift */; };
+		E30252042B26A00100795C99 /* Light.swift in Sources */ = {isa = PBXBuildFile; fileRef = E30252032B26A00100795C99 /* Light.swift */; };
 		E3E6553C2B268811001A55C1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3E6553B2B268811001A55C1 /* AppDelegate.swift */; };
 		E3E6553E2B268811001A55C1 /* art.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = E3E6553D2B268811001A55C1 /* art.scnassets */; };
 		E3E655402B268811001A55C1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3E6553F2B268811001A55C1 /* ViewController.swift */; };
@@ -27,7 +27,7 @@
 
 /* Begin PBXFileReference section */
 		E30252012B269EEF00795C99 /* audio */ = {isa = PBXFileReference; lastKnownFileType = folder; path = audio; sourceTree = "<group>"; };
-		E30252032B26A00100795C99 /* LightNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LightNode.swift; sourceTree = "<group>"; };
+		E30252032B26A00100795C99 /* Light.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Light.swift; sourceTree = "<group>"; };
 		E3E655382B268811001A55C1 /* ShadowsInAR.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ShadowsInAR.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E3E6553B2B268811001A55C1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E3E6553D2B268811001A55C1 /* art.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = art.scnassets; sourceTree = "<group>"; };
@@ -77,7 +77,7 @@
 			children = (
 				E3E6553B2B268811001A55C1 /* AppDelegate.swift */,
 				E3E6553F2B268811001A55C1 /* ViewController.swift */,
-				E30252032B26A00100795C99 /* LightNode.swift */,
+				E30252032B26A00100795C99 /* Light.swift */,
 				E3E655572B2689AA001A55C1 /* Character.swift */,
 				E3E6555F2B2693CA001A55C1 /* ARSCNViewDelegate.swift */,
 				E3E655562B268966001A55C1 /* Overlays */,
@@ -186,7 +186,7 @@
 				E3E6555E2B268E0D001A55C1 /* VCExtensionForOverlays.swift in Sources */,
 				E3E6553C2B268811001A55C1 /* AppDelegate.swift in Sources */,
 				E3E655602B2693CA001A55C1 /* ARSCNViewDelegate.swift in Sources */,
-				E30252042B26A00100795C99 /* LightNode.swift in Sources */,
+				E30252042B26A00100795C99 /* Light.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
